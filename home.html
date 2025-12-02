@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Debate</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body> 
+    <header></header>
+
+    <main>
+        
+        <section class="caja-container" id="caja-1">
+            <div class="header-azul">
+                <h2>Equipo 1</h2>
+            </div>
+            <div class="cinta-wrapper">
+                <div class="cinta-inner" id="cinta-1">
+                    </div>
+                <div class="cinta-puntero"></div>
+            </div>
+            <div class="opcion-elegida" id="resultado-1"></div>
+            <p class="opciones-restantes">Pruebas restantes: <span id="opciones-restantes-1">5</span></p>
+            <button class="tirar-btn" data-caja="1">GO</button>
+
+            <button id="btn-tema-1" class="btn-tema" disabled>TEMA</button>
+        </section>
+
+        <section class="caja-container" id="caja-2">
+            <div class="header-azul">
+                <h2>Equipo 2</h2>
+            </div>
+            <div class="cinta-wrapper">
+                <div class="cinta-inner" id="cinta-2">
+                    </div>
+                <div class="cinta-puntero"></div>
+            </div>
+            <div class="opcion-elegida" id="resultado-2"></div>
+            <p class="opciones-restantes">Pruebas restantes: <span id="opciones-restantes-2">5</span></p>
+            <button class="tirar-btn" data-caja="2">GO</button>
+            
+            <button id="btn-tema-2" class="btn-tema" disabled>TEMA</button>
+        </section>
+    </main>
+
+    <div class="logo-header-fixed">
+        <img src="logo3.png" alt="Logo de cabecera">
+    </div>
+
+    <footer>
+        <button id="btn-reset" onclick="resetearJuego()">↻ HOME</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

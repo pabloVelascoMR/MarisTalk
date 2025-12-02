@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <style>
+        
+        
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+            background-image: url('fondo.png'); 
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed;
+        }
+        
+        .home-container {
+            background-color: transparent;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: none;
+            max-width: 650px;
+            min-width: 350px;
+            margin: 20px;
+            
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        .main-logo {
+            width: 80%; 
+            max-width: 450px;
+            height: auto;
+            margin-bottom: 80px; 
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7)); 
+        }
+        
+        .start-btn {
+            background-color: rgba(149, 164, 180, 0.8); 
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.4em; 
+            font-weight: bold;
+            border-radius: 50px; 
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+        }
+        .start-btn:hover {
+            background-color: rgba(0, 123, 255, 1);
+            transform: translateY(-2px);
+        }
+
+        .logo-container {
+            margin-top: 50px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            gap: 40px; 
+        }
+
+        .logo-container img {
+            width: 100px; 
+            height: auto;
+            opacity: 0.9; 
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)); 
+            transition: transform 0.3s;
+        }
+        
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .designer-info {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.8em;
+            color: white; 
+            font-weight: normal;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1); 
+        }
+        .designer-info a {
+            color: #e0e0e0; 
+            text-decoration: none;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .designer-info a:hover {
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="home-container">
+        
+        <img src="logo2.png" alt="Logo principal del Torneo" class="main-logo">
+        
+        <a href="home.html" class="start-btn">COMENZAR SORTEO</a>
+        
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo del Colegio">  
+        </div>
+    </div>
+    
+    <div class="designer-info">
+        Web diseñada por Pablo Velasco Martín. &bull; <a href="https://github.com/pabloVelascoMR" target="_blank">GitHub</a>
+    </div>
+
+</body>
+</html>
